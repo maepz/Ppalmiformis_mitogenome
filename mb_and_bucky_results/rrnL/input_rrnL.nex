@@ -1,0 +1,10 @@
+#nexus
+begin mrbayes;
+set autoclose=yes nowarn=yes;
+execute /Users/maeperez/Desktop/Alv_genes/mb_optimisation/rrnL.nex;
+
+lset nst=6 rates=invgamma;
+prset brlenspr=Unconstrained:Exp(50.0);
+mcmc nruns=4 temp=0.2 ngen=30000 burninfrac=0.1667 Nchains=4 samplefreq=250 swapfreq=10 printfreq=1000 mcmcdiagn=yes diagnfreq=2 filename=rrnL;
+quit;
+end;

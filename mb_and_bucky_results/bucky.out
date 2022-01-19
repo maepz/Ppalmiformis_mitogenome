@@ -1,0 +1,97 @@
+Bayesian Untangling of Concordance Knots (applied to yeast and other organisms)
+BUCKy version 1.4.4, 22 June 2015
+Copyright (C) 2006-2015 by Bret Larget, Cecile Ane and Riley Larget
+
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Program initiated at Wed Jan 12 13:53:17 2022
+
+
+Program invocation: ../bucky -a 0.001 -n 1000000 -k 2 -c 4 -m 5 -r 10 --create-single-file --create-joint-file --create-sample-file --calculate-pairs -o a0.001 ../atp6/atp6.in ../atp8/atp8.in ../cob/cob.in ../cox1/cox1.in ../cox2/cox2.in ../cox3/cox3.in ../nad1/nad1.in ../nad2/nad2.in ../nad3/nad3.in ../nad4/nad4.in ../nad4l/nad4l.in ../nad5/nad5.in ../nad6/nad6.in ../rrnL/rrnL.in ../rrnS/rrnS.in
+
+  Parameter              | Usage                    | Default Value | Value Used
+  ------------------------------------------------------------------------------
+  alpha                  | -a number                | 1             | 0.001
+  # of runs              | -k integer               | 2             | 2
+  # of MCMC updates      | -n integer               | 100000        | 1000000
+  # of chains            | -c integer               | 1             | 4
+  MCMCMC Rate            | -r integer               | 100           | 10
+  alpha multiplier       | -m number                | 10            | 5
+  subsample rate         | -s integer               | 1             | 1
+  output root file name  | -o name                  | run1          | a0.001
+  input file list file   | -i filename              |               | 
+  random seed 1          | -s1 integer              | 1234          | 1234
+  random seed 2          | -s2 integer              | 5678          | 5678
+  CF cutoff for display  | -cf number               | 0.05          | 0.05
+  create sample file     | --create-sample-file     | false         | true
+  create joint file      | --create-joint-file      | false         | true
+  create single file     | --create-single-file     | false         | true
+  use independence prior | --use-independence-prior | false         | false
+  calculate pairs        | --calculate-pairs        | false         | true
+  use update groups      | --use-update-groups      | true          | true
+  File with prune list   | -p pruneFile             |               | 
+  skip genes             | -sg                      | false         | false
+  Space optimization     | --opt-space              | false         | false
+  no population tree?    | --no-population-tree     | false         | false
+  genomewide CF grid size| --genomewide-grid-size   | 1000          | 1000
+  ------------------------------------------------------------------------------
+
+Reading in summary files....
+Number of genes sequenced for each taxon:
+1    AlvCau 15    
+2    AlvPom 15    
+3    EU239688.1 15    
+4    ParGra2 15    
+5    ParPal 15    
+6    ParPan 15    
+7    MK192098.1 15    
+8    P08H-3 15    
+9    ParFij 15    
+10   EU239687.1 15    
+Read 15 genes with a total of 84 different sampled tree topologies
+Writing input file names to file a0.001.input....done.
+Sorting trees by average posterior probability....done.
+Writing single gene posterior distribution table to file a0.001.single....done.
+Initializing random number generator....done.
+Initializing gene information....done.
+Initializing splits counts (found 47 distinct splits)....done.
+Setting initial MCMC state....done.
+Initializing MCMCMC acceptance counters and pairwise counters....done.
+MCMC initiated at Wed Jan 12 13:53:17 2022
+
+
+Beginning burn-in with 100000 updates (10% extra of desired updates)...
+0   10   20   30   40   50   60   70   80   90   100
++----+----+----+----+----+----+----+----+----+----+
+***************************************************
+ ....done.
+Initializing summary tables...done.
+Sampled topologies will be in file(s) a0.001.sample.run1 to a0.001.sample.run2.
+Beginning 1000000 MCMC updates...
+0   10   20   30   40   50   60   70   80   90   100
++----+----+----+----+----+----+----+----+----+----+
+***************************************************
+ ....done.
+Writing joint posterior table to file a0.001.joint....done.
+Writing cluster summary to file a0.001.cluster....done.
+Writing concordance factors to a0.001.concordance....done.
+Average SD of mean sample-wide CF: 4.31052e-05
+Writing tree pair data to a0.001.pairs....done.
+Writing single and joint gene posteriors to a0.001.gene....done.
+
+MCMCMC acceptance statistics in run 1:
+alpha1          <--> alpha2         accepted proposed proportion
+0.001000        <--> 0.005000       33077    33077    1.000000   
+0.005000        <--> 0.025000       33596    33596    1.000000   
+0.025000        <--> 0.125000       33327    33327    1.000000   
+
+MCMCMC acceptance statistics in run 2:
+alpha1          <--> alpha2         accepted proposed proportion
+0.001000        <--> 0.005000       33223    33223    1.000000   
+0.005000        <--> 0.025000       33440    33440    1.000000   
+0.025000        <--> 0.125000       33337    33337    1.000000   
+Program ended at Wed Jan 12 13:54:12 2022
+
+
+Elapsed time: 55 seconds.

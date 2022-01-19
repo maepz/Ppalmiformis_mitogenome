@@ -1,0 +1,25 @@
+mean #groups = 2.000
+SD across runs = 0.000
+
+credible regions for # of groups
+probability region
+------------------
+  0.99      (2,2)
+  0.95      (2,2)
+  0.90      (2,2)
+------------------
+
+Distribution of cluster number in run 1:
+ # of    raw    posterior
+groups  counts probability
+--------------------------
+  2    1000000  1.00000000
+--------------------------
+
+Distribution of cluster number in run 2:
+ # of    raw    posterior
+groups  counts probability
+--------------------------
+  2    1000000  1.00000000
+--------------------------
+
