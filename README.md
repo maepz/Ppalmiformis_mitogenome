@@ -1,4 +1,4 @@
-<b>This repertory holds the supplementary data for the <i>P. palmiformis</i> mitogenome reference paper:</b>
+<b>This repository holds the supplementary data for the <i>P. palmiformis</i> mitogenome reference paper:</b>
 
 Perez M, Wang H, Angers B, and Qian P-Y (2022). Complete mitochondrial genome of <i>Paralvinella palmiformis</i> (Polychaeta: Alvinellidae). Mitochondrial DNA Part B 7(5): 786–788. doi : [10.1080/23802359.2022.2071652](https://doi.org/10.1080/23802359.2022.2071652)
 
